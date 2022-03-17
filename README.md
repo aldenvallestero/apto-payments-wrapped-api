@@ -35,5 +35,5 @@ This contains compilation of business logic using Axios to reach Apto Payment se
 5. **POST** `/api/v1/card/physical` - request for physical card delivery.
 
 ## Links
-Apto Payments: https://aptopayments.com
-My Portfolio: https://aldenvallestero.com
+- Apto Payments: https://aptopayments.com
+- My Portfolio: https://aldenvallestero.com
