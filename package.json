@@ -1,0 +1,31 @@
+{
+  "name": "apto-payments-wrapped-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index",
+    "test": "ts-node-dev --respawn --transpile-only src/index",
+    "build": "npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aldenvallestero/apto-payments-wrapped-api.git"
+  },
+  "author": "Alden Vallestero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aldenvallestero/apto-payments-wrapped-api/issues"
+  },
+  "homepage": "https://github.com/aldenvallestero/apto-payments-wrapped-api#readme",
+  "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.21",
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "ts-node-dev": "^1.1.8"
+  }
+}
