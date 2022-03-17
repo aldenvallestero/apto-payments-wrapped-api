@@ -18,7 +18,7 @@ The server is separated into two main folders, **src** which contains TypeScript
 ## Source Folder Files & Directories
 Folder containing TypeScript files that must be compiled into **dist** folder in JavaScript format. This folder is used for the development.
 
-#### index.js
+#### index.ts
 This is the primary file that runs the entire backend to both local and live server.
 
 #### /routes
@@ -33,6 +33,10 @@ This contains compilation of business logic using Axios to reach Apto Payment se
 3. **PUT** `/api/v1/cardholder/agreement` - confirms agreement approval.
 4. **PUT** `/api/v1/card/` - issue the virtual card.
 5. **POST** `/api/v1/card/physical` - request for physical card delivery.
+
+
+## Environment Variables
+1. APTO_MOBILE_KEY - you can get this from Apto Payments owner dashboard.
 
 ## Links
 - Apto Payments: https://aptopayments.com
