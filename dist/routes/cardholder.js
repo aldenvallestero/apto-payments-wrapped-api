@@ -51,6 +51,7 @@ router
     let region = req.body.region;
     let postal_code = req.body.postal_code;
     let cardholder = new cardholder_1.default();
+    let icardholder = req.body;
     let registered_cardholder = yield cardholder.register(country_code, phone_number, verification_id, document_id, country, document_type, email, birthday, first_name, last_name, street1, street2, locality, region, postal_code);
     return res.json({
         status: 200,

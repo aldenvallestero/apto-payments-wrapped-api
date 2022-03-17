@@ -1,5 +1,6 @@
-import express, { application, Request, Response } from 'express';
+import express, { Request, Response } from 'express';
 import Cardholder from '../controllers/cardholder';
+import ICardholder from '../interfaces/cardholder';
 const router = express.Router();
 
 router
@@ -43,6 +44,8 @@ router
         let postal_code: string     = req.body.postal_code;
 
         let cardholder = new Cardholder();
+        let icardholder: ICardholder = req.body;
+
         let registered_cardholder = await cardholder.register(country_code, phone_number, verification_id, document_id, country, document_type, email, birthday, first_name, last_name, street1, street2, locality, region, postal_code);
         
         return res.json({
